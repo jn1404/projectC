@@ -14,6 +14,10 @@
 // Also, we should reformat the story so that there is only a maximum of two 
 // directions per "room". it makes it the code easier. 
 
+
+// so we should map the game before we get the user input 
+// i got help from benson for this part. 
+
 char output[100];
 
 typedef struct node{
@@ -34,7 +38,6 @@ start -> next[0] = & //address of next node
 
 
 
-
 int main()
 { 
 	char user;
@@ -48,6 +51,8 @@ int main()
 		char *menu = "\n1. read letter ";
 		prints("\n %s",menu);
 		fgets(choice, sizeof choice, stdin);
+		// if (choice)
+		//		current = root -> next[];
 		switch (choice){
 			case '1':
 				printf("Welcome to CaseQuest!")
