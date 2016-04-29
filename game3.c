@@ -17,6 +17,7 @@
 
 // so we should map the game before we get the user input 
 // i got help from benson for this part. 
+// still incomplete
 
 char output[100];
 
