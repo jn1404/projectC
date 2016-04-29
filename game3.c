@@ -7,58 +7,30 @@
 // Instead of using a 2D array, we should make a binary tree.
 // http://www.cprogramming.com/tutorial/c/lesson18.html
 // im guessing the game "CaseQuest"'s objective is to find some treasure and 
-// open it. 
-// i also was wondering if you wanted to keep track of how many times the 
-// player moved to keep some type of score.
+// open it, so i was also was wondering if you wanted to keep track of how many times 
+// the player moved to keep some type of score. This part isn't important yet because 
+// we still have to complete this part. 
 
-struct node
-{
-  int key_value;
-  struct node *north;
-  struct node *south;
-};
+// Also, we should reformat the story so that there is only a maximum of two 
+// directions per "room". it makes it the code easier. 
 
-struct node *root = 0;
+char output[100];
 
-insert(int key, struct node **leaf)
-{
-    if( *leaf == 0 )
-    {
-        *leaf = (struct node*) malloc( sizeof( struct node ) );
-        (*leaf)->key_value = key;
-        /* initialize to null */
-        (*leaf)->north = 0;    
-        (*leaf)->south = 0;  
-    }
-    else if(key < (*leaf)->key_value)
-    {
-        insert( key, &(*leaf)->north );
-    }
-    else if(key > (*leaf)->key_value)
-    {
-        insert( key, &(*leaf)->south );
-    }
-}
+typedef struct node{
+	char *output;
+	struct node **next;
+	struct node *prev;
+} node;
 
-struct node *search(int key, struct node *leaf)
-{
-  if( leaf != 0 )
-  {
-      if(key==leaf->data)
-      {
-          return leaf;
-      }
-      else if(key<leaf->key_value)
-      {
-          return search(key, leaf->north);
-      }
-      else
-      {
-          return search(key, leaf->south);
-      }
-  }
-  else return 0;
-}
+node *start = malloc(sizeof(node));
+strcpy(start -> output,"\nYou are standing in a mossy field and see an old house in the distance. 
+		There is a letter here. ");
+
+node *root = start;
+start -> next = malloc(sizeof(node)*2);
+start -> next[0] = & //address of next node
+
+
 
 
 
