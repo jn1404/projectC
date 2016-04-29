@@ -12,7 +12,7 @@
 // we still have to complete this part. 
 
 // Also, we should reformat the story so that there is only a maximum of two 
-// directions per "room". it makes it the code easier. 
+// directions per "room". it makes the code easier. 
 
 
 // so we should map the game before we get the user input 
