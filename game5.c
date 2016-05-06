@@ -38,7 +38,7 @@ int main()
 		//if en4emy use random to see player survuves
 		//if regular tppe then print scenario 		
 		strcpy(str1, "fight");
-		strcpy(str2, "riddle");
+		strcpy(str2, "talk");
 		int battle = strcmp(scenario[x][y], str1);
 		int riddle = strcmp(scenario[x][y], str2);
 	
@@ -49,9 +49,29 @@ int main()
 				x = x + 1; // Game over 
 			else 
 				y = y + 1; // room 
+		else 
+			printf("%s\n", scenario [x][y]->scenario);
+			scanf("%s", &choice);
+			switch(choice){
+			case '1':
+				x = x + 1;
+				break;
+			case '2':
+				y = y + 1;
+				break;
+			case '3':
+				x = x - 1;
+				break;
+			case '4':
+				y = y - 1;
+				break;
+			default:
+				printf("\n You can't really do that. Don't try to break the game, punk!\n");
+				break;
+			}
 			
-		else if (riddle == 0){
-			printf("")
+		if (riddle == 0){
+			printf(" ")
 			fgets(user, sizeof user, stdin);
 			if (user == answer)
 				y = y + 1; // room
