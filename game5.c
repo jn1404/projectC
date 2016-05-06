@@ -23,7 +23,7 @@ int main()
 	struct Scenario **scenario[100][100];
 	
 	
-	scenario[0][0] = "\nYou wake up in a mossy field and see an old house in the distance. There is a sign here that reads:\n\nWelcome to 'Mazequest'!\nThis game puts you in a world made of rooms, laid out in a grid-like system.\nYour goal here is unclear: there are multiple ways of winning (or losing) the game.\nYou'll be given some tools to use in your quest, but be careful when making choices!\n\nHOW TO PLAY:\nFor each situation, you'll be given a limited number of options, represented as numbers.\nType the number of your choice into the console to make your move\n\nTIPS:\n> Violence is not always the correct choice. Your brain is one of your most valuable tools!\n> Some tools are better for certain scenarios. Try to analyze each situation carefully!\n> There's a way out of here, but you can also try to look for treasure!\n\nGood Luck!\n\n 1. Go East\n 2. Go South";
+	scenario[0][0] = "\n You wake up in a mossy field and see an old house in the distance. There is a sign here that reads:\n\nWelcome to 'Mazequest'!\nThis game puts you in a world made of rooms, laid out in a grid-like system.\nYour goal here is unclear: there are multiple ways of winning (or losing) the game.\nYou'll be given some tools to use in your quest, but be careful when making choices!\n\nHOW TO PLAY:\nFor each situation, you'll be given a limited number of options, represented as numbers.\nType the number of your choice into the console to make your move\n\nTIPS:\n> Violence is not always the correct choice. Your brain is one of your most valuable tools!\n> Some tools are better for certain scenarios. Try to analyze each situation carefully!\n> There's a way out of here, but you can also try to look for treasure!\n\nGood Luck!\n\n 1. Go East\n 2. Go South";
 	scenario[1][0] = "\n You hear a cry to the east. There is a beautiful woman walking to the south.\n\n 1. Go East 2. Go South";
 	scenario[0][1] = "\n You approach a bridge with what looks to be a small man. Be careful. \n\n 1. Approach bridge. ";
 	scenario[1][1] = "\n fight";
@@ -39,15 +39,18 @@ int main()
 		//if regular tppe then print scenario 		
 		strcpy(str1, "fight goblin");
 		strcpy(str2, "talk");
+		int goblinbattle = strcmp(scenario[x][y], str1);
+		int riddle = strcmp(scenario[x][y], str2);
+		/* strcpy(str2, "talk");
 		strcpy(str3, "fight banshee");
 		strcpy(str4, "fight dragon");
 		strcpy(str5, "fight cannibals");
-		int goblinbattle = strcmp(scenario[x][y], str1);
+		
 		int bansheebat = strcmp(scenario[x][y], str3); // 8
 		int dragonbat = strcmp(scenario[x][y], str4); // 5
 		int cannbat = strcmp(scenario[x][y], str5); // 7
 		int riddle = strcmp(scenario[x][y], str2);
-	
+		*/
 		if (goblinbattle == 0){
 			printf("Battle ensues.");
 			int r = rand() % 11; // rand # between 0 - 10 
@@ -76,7 +79,7 @@ int main()
 				break;
 			}
 
-			
+	/*		
 		if (riddle == 0){
 			printf(" ")
 			fgets(user, sizeof user, stdin);
@@ -86,7 +89,7 @@ int main()
 				y = y - 1; // Game over
 		}
 		else 
-			printf("%s\n", scenario [x][y]->scenario);
+			printf("%s\n", scenario[x][y]);
 			scanf("%s", &choice);
 			switch(choice){
 			case '1':
@@ -105,6 +108,7 @@ int main()
 				printf("\n You can't really do that. Don't try to break the game, punk!\n");
 				break;
 			}
+			*/
 }
 }
 }
