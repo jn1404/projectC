@@ -37,15 +37,21 @@ int main()
 		//check type of scenario
 		//if en4emy use random to see player survuves
 		//if regular tppe then print scenario 		
-		strcpy(str1, "fight");
+		strcpy(str1, "fight goblin");
 		strcpy(str2, "talk");
-		int battle = strcmp(scenario[x][y], str1);
+		strcpy(str3, "fight banshee");
+		strcpy(str4, "fight dragon");
+		strcpy(str5, "fight cannibals");
+		int goblinbattle = strcmp(scenario[x][y], str1);
+		int bansheebat = strcmp(scenario[x][y], str3); // 8
+		int dragonbat = strcmp(scenario[x][y], str4); // 5
+		int cannbat = strcmp(scenario[x][y], str5); // 7
 		int riddle = strcmp(scenario[x][y], str2);
 	
-		if (battle == 0){
+		if (goblinbattle == 0){
 			printf("Battle ensues.");
 			int r = rand() % 11; // rand # between 0 - 10 
-			if (r < 5)
+			if (r < 2)
 				x = x + 1; // Game over 
 			else 
 				y = y + 1; // room 
@@ -69,6 +75,7 @@ int main()
 				printf("\n You can't really do that. Don't try to break the game, punk!\n");
 				break;
 			}
+
 			
 		if (riddle == 0){
 			printf(" ")
