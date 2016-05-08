@@ -60,7 +60,7 @@ int main()
 				y = y + 1; // room 
 		}
 			else {
-			printf("%s\n", scenario[x][y]->scenario);
+			printf("%s\n", (*scenario[x][y])->scenario);
 			scanf("%s", &choice);
 			switch(choice){
 			case '1':
