@@ -58,8 +58,9 @@ int main()
 				x = x + 1; // Game over 
 			else 
 				y = y + 1; // room 
-		else 
-			printf("%s\n", scenario [x][y]->scenario);
+		}
+			else {
+			printf("%s\n", scenario[x][y]->scenario);
 			scanf("%s", &choice);
 			switch(choice){
 			case '1':
@@ -78,6 +79,7 @@ int main()
 				printf("\n You can't really do that. Don't try to break the game, punk!\n");
 				break;
 			}
+		
 
 	/*		
 		if (riddle == 0){
