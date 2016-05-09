@@ -17,7 +17,7 @@ int main()
  //HOUSE ROUTE
   scenario[1][0] = "\nYou approach a small cabin by a swamp. As you inch closer, you can hear a faint cry.\n\n1. Enter cabin\n3.Turn back";
   scenario[2][0] = "\nAs you enter the cabin, you see a young woman in a white dress. It appears she was the source of the faint cry.\nThe woman noties your presence, and turns to face you. She shoots you a piercing stare, and grins. The air suddenly feels chilly, and you feel the urge to charge at the woman.\n\n1. Attack\n2. Talk";
-  scenario[3][0] = "\nThe moment you make your first sudden movement, the woman's apprearance changes. Her skin turns pale gray, her features freakishly stretched, and her eyes start to bleed.";
+  scenario[3][0] = "\nThe moment you make your first sudden movement, the woman's apprearance changes. Her skin turns pale gray, her features freakishly stretched, and her eyes start to bleed.\n\n1. Fight";
   scenario[4][0] = "\nThe banshee lets out a deafening screech that ruptures your eardrums, and you feel your consciousness fade as your brain leaks out of your skull.\n\n\nGAME OVER.";
   scenario[3][1] = "\nYour strike connects, and the banshee lets out a wail of pain. She reverts back to her human form.\n\n2. Next";
   scenario[2][1] = "\nYou greet the young lady.\n\n'My my, it's been a while since one of you entered my lair', she says while pointing towards a dusty skull on the ground.\n\n2. 'Uhhhhh what the hell?'";
@@ -26,14 +26,14 @@ int main()
   scenario[3][3] = "\nYou can see a beach in the distance.\n\n2. Keep going";
   scenario[3][4] = "\nYou arrive at the beach the lady mentioned. It is full of indigenous men dancing around a fire.\n\nYou see a raft by the shore.\n\nYou notice the is a corpse roasting by the fire, and some of the men are gnawing at the corpses legs.\n\nSome of the cannibals spot you, and walk towards you with spears and hatchets in their hands.\n\n1. Fight\n2. Offer ring";
   scenario[4][3] = "\nDue to their lack of armor, the cannibals go down easily to your sword. However, they outnumber you, and eventually wear you down. Tired, you let your guard down and take a hatchet to your back.\n\n You spend your last conscious moments burning by the fire as a young boy nibbles at your hand.\n\nGAME OVER";
-  scenario[4][4] = "\nCannibals want to battle!";
+  scenario[4][4] = "\nCannibals want to battle!\n\n2. Fight";
   scenario[4][5] = "\nWith some effort, you manage to slay them all. You feel horrible but hey, it's survival. You decide to take the raft by the shore out into open sea.\n\nAfter a while, you get this feeling of dread, and the pocket where you keep the ring seems to weight you down. Your worries don't last long, however, as a gargantuan serpent arises from the dark waters and swallows you whole. You really shouldn't have kept that ring.\n\nTHE END?";
   scenario[3][5] = "\nYou offer the gold ring as a token of peace, and the cannibals gladly accept it. In fact, they seem entranced by its beauty.\n\nThey decide to give you the raft by the shore in return for the cursed artifact, and you depart towards the open sea.\n\nWho knows what adventures await you in a new land.\n\nVICTORY!!! Thanks for playing!";
   
   //BRIDGE ROUTE
   
   scenario[0][1] = "\nYou approach the bridge. As you get closer a goblin comes out of hiding from under the bridge. He holds a dagger and has amailicious expression in his face.\n\n2. fight\n4. Turn back";
-  scenario[0][2] = "\nGoblin wants to battle!";
+  scenario[0][2] = "\nGoblin wants to battle!\n\n2. Fight";
   scenario[1][2] = "\nYou miss your swing, and the goblin slashes at your throat. You instantly perish. Pathetic.\n\nGAME OVER";
   scenario[0][3] = "\nYou strike the creature down, and he immediately turns to dust.\n\nHe kept a stash of goods under the bridge. Upon searching it, you find a strange book.\n\nYou got the Spell Book! Read it to unleash whatever incantations lie within!\n\nYou see some smoke coming from down the road\n\n 2. Investigate";
   scenario[0][4] = "\nThe smoke is coming from a small village. As you approach it, you notice the townspeople running frantically. A dragon swoop over the village, breathing fire upon the buildings.\n\n1. Throw sword\n2. Read Spell Book";
