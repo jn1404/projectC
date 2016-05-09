@@ -84,8 +84,6 @@ scenario[4][7] = "\nYou've managed to break out of the game's confines. Good for
 				printf("%d",x);
 				printf("%d",y);
 				break;
-			case 'time':
-				x = x + 1
 			default:
 				printf("\n You can't really do that. Don't try to break the game, punk!\n");
 				break;
